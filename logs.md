@@ -25,5 +25,8 @@
 
 11/29:
    - cleaned up some code of tictactoe environment
-   - 
+   - went through tutorial of q-learning blackjack agent
 
+11/30:
+   - used baselines for a small ant env, recorded results
+   - 
