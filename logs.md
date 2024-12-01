@@ -29,4 +29,4 @@
 
 11/30:
    - used baselines for a small ant env, recorded results
-   - 
+   - read math + pseudocode of ppo
