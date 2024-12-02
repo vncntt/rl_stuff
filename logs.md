@@ -30,3 +30,9 @@
 11/30:
    - used baselines for a small ant env, recorded results
    - read math + pseudocode of ppo
+
+
+12/1:
+   - went through code of actual ppo 
+      - there are so many specific weird details
+      - don't fully understand the code
