@@ -36,3 +36,7 @@
    - went through code of actual ppo 
       - there are so many specific weird details
       - don't fully understand the code
+
+12/2:
+   - went through ppo atari code
+   - i keep getting env name doesn't exist. version error?

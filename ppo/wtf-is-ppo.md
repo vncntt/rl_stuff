@@ -57,3 +57,5 @@ Updates are "limited" in magnitude by $\epsilon$.
 ![text](pseudocode.png )
 ## Other
 - value function has to update along with the policy parameters
+
+- Code: the actor is for the policy and the critic is for the value function
