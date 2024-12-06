@@ -3,6 +3,8 @@ import os
 import time
 import numpy as np
 import gymnasium as gym
+import shimmy
+import ale_py
 import random
 import torch
 import torch.nn as nn

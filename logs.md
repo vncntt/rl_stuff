@@ -40,3 +40,16 @@
 12/2:
    - went through ppo atari code
    - i keep getting env name doesn't exist. version error?
+
+12/3:
+   - no work bc of veritasium work + finals :(
+
+12/4: no work bc i was being a bum 
+
+12/5: 
+- read and wrote down some notes for survey on demonstrations
+
+
+
+wait given that i know how to write environments in the RL gym, i should be able to create 
+an env with the apple game and train an agent to solve it right?
