@@ -32,9 +32,9 @@ $$
 where $\epsilon$ is a hyperparameter representing how much we allow the policy to deviate on each update. 
 
 
-This is just a readable equation, but we can consider when the advantage positive or negative to more easily understand it:
+This is not a readable equation, but we can consider when the advantage positive or negative to more easily understand it:
 
-## Positive advantage function (good action!!) (technically it's non-negative):
+## Positive advantage function (good action!!):
 Intuitively, when the advantage function is positive the action is relatively good and we want to encourage it -> big $L$.
 
 $$L(s,a,\theta_k,\theta) = \min \left( \frac{\pi_{\theta}(a,s)}{\pi_{\theta_k}(a,s)}, (1+\epsilon) \right) A^{\pi_{\theta_k}}(s,a)$$
@@ -44,7 +44,7 @@ Normally, $L$ would increase linearly with how much more likely we are to select
 The model isn't incentivized to get the probability higher than $1+\epsilon$ since it doesn't do anything.
 This is the main point of PPO: violent updates are scary and bad so this makes sure the limitation makes training goes slow and steady.
 
-## Negative advantage function (action bad):
+## Negative advantage function (bad action):
 
 $$L(s,a,\theta_k,\theta) = \max \left( \frac{\pi_{\theta}(a,s)}{\pi_{\theta_k}(a,s)}, (1-\epsilon) \right) A^{\pi_{\theta_k}}(s,a)$$
 

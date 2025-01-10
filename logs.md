@@ -50,6 +50,39 @@
 - read and wrote down some notes for survey on demonstrations
 
 
+1/9:
+finally finally back. will try to be consistent and work through some maniskill stuff now
+maniskill doesn't work on my mac and using colab is so jank so i rented some gpus using vast.
+but i haven't really worked with remote machines before and the whole process of sshing into them and then setting up the env and transferring files back took like 1 hr plus.
+i was stuck for too long using the wrong port....
+also setting up dependencies took longer than expected. 
+copy-pasting from the colab notebook didn't work.
+i just sent all the errors to claude and it fixed it.
+
+- worked through quickstart notebook. mostly just ran stuff and read the code.
+
+Next up:
+- work through creating and building environments
+- read through the sections of [User Guide Concepts](https://maniskill.readthedocs.io/en/latest/user_guide/concepts/) and write down some notes
+
+
+
+
+how to ssh into vast.ai machine:
+1. click keys icon in vast
+2. run the "direct ssh connect" command
+
+
+transferring files from vast to local (i can also just clone repo, add stuff, and push to github):
+(do this from local machine)
+1. have a file which contains the PRIVATE KEY in ~/.ssh/vast_key
+(idk if i need to redo this when i connect to another machine next time)
+2. chmod 600 ~/.ssh/vast_key
+3. ssh-keygen -y -f ~/.ssh/vast_key > ~/.ssh/vast_key.pub
+4. copy the public key and paste it into "add ssh key" in vast
+5. scp -P PORT_NUMBER -i ~/.ssh/vast_key -r root@ssh4.vast.ai:(PATH TO FILE IN VAST MACHINE) /Users/vincentcheng/Desktop/allcode/RL_stuff
+
 
 wait given that i know how to write environments in the RL gym, i should be able to create 
 an env with the apple game and train an agent to solve it right?
+(spent 2 days over winter break trying to get the agent working but some stupid bug made me rage quit)
