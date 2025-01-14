@@ -63,10 +63,10 @@ i just sent all the errors to claude and it fixed it.
 
 
 1/13:
+- read through concepts section. didn't fully understand all of it though.
 
-Next up:
-- work through creating and building environments
-- read through the sections of [User Guide Concepts](https://maniskill.readthedocs.io/en/latest/user_guide/concepts/) and write down some notes
+
+
 
 
 
