@@ -61,6 +61,9 @@ i just sent all the errors to claude and it fixed it.
 
 - worked through quickstart notebook. mostly just ran stuff and read the code.
 
+
+1/13:
+
 Next up:
 - work through creating and building environments
 - read through the sections of [User Guide Concepts](https://maniskill.readthedocs.io/en/latest/user_guide/concepts/) and write down some notes
@@ -69,8 +72,19 @@ Next up:
 
 
 how to ssh into vast.ai machine:
-1. click keys icon in vast
-2. run the "direct ssh connect" command
+1. start a new instance of vast gpu
+2. run "ssh-keygen -t ed25519 -f ~/.ssh/vast_key which creates 
+~/.ssh/vast_key (private key) and ~/.ssh/vast_key.pub (public key)
+3. run "chmod 600 ~/.ssh/vast_key"
+4. paste the public key into the "add ssh key" section in vast
+5. run "ssh -i ~/.ssh/vast_key [the direct ssh connect command in vast]"
+
+opening a new window when connecting in vscode:
+1. cmd + shift + p 
+2. "Remote-SSH: Connect to Host..."
+3. "+ Add new SSH Host"
+4. enter the "Direct ssh connect:" command from vast
+5. cmd + shift + p -> "Remote-SSH: Connect to Host..." -> [the address of the machine]
 
 
 transferring files from vast to local (i can also just clone repo, add stuff, and push to github):
