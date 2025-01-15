@@ -66,6 +66,9 @@ i just sent all the errors to claude and it fixed it.
 - read through concepts section. didn't fully understand all of it though.
 
 
+1/14:
+
+
 
 
 
@@ -83,18 +86,20 @@ opening a new window when connecting in vscode:
 1. cmd + shift + p 
 2. "Remote-SSH: Connect to Host..."
 3. "+ Add new SSH Host"
-4. enter the "Direct ssh connect:" command from vast
+4. enter the command from step 5 above
 5. cmd + shift + p -> "Remote-SSH: Connect to Host..." -> [the address of the machine]
 
 
 transferring files from vast to local (i can also just clone repo, add stuff, and push to github):
 (do this from local machine)
+
 1. have a file which contains the PRIVATE KEY in ~/.ssh/vast_key
 (idk if i need to redo this when i connect to another machine next time)
 2. chmod 600 ~/.ssh/vast_key
 3. ssh-keygen -y -f ~/.ssh/vast_key > ~/.ssh/vast_key.pub
 4. copy the public key and paste it into "add ssh key" in vast
-5. scp -P PORT_NUMBER -i ~/.ssh/vast_key -r root@ssh4.vast.ai:(PATH TO FILE IN VAST MACHINE) /Users/vincentcheng/Desktop/allcode/RL_stuff
+5. scp -i ~/.ssh/vast_key -P [PROXY PORT_NUMBER] -r root@ssh4.vast.ai:(PATH TO FILE IN VAST MACHINE) /Users/vincentcheng/Desktop/allcode/RL_stuff/maniskill (ONLY TRANSFER SINGULAR FILES)
+
 
 
 wait given that i know how to write environments in the RL gym, i should be able to create 
