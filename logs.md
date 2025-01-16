@@ -102,12 +102,19 @@ opening a new window when connecting in vscode:
 transferring files from vast to local (i can also just clone repo, add stuff, and push to github):
 (do this from local machine)
 
-1. have a file which contains the PRIVATE KEY in ~/.ssh/vast_key
-(idk if i need to redo this when i connect to another machine next time)
-2. chmod 600 ~/.ssh/vast_key
-3. ssh-keygen -y -f ~/.ssh/vast_key > ~/.ssh/vast_key.pub
-4. copy the public key and paste it into "add ssh key" in vast
-5. scp -i ~/.ssh/vast_key -P [PROXY PORT_NUMBER] -r root@ssh4.vast.ai:(PATH TO FILE IN VAST MACHINE) /Users/vincentcheng/Desktop/allcode/RL_stuff/maniskill (ONLY TRANSFER SINGULAR FILES)
+using PAT token and git is better
+
+~~1. have a file which contains the PRIVATE KEY in ~/.ssh/vast_key
+(idk if i need to redo this when i connect to another machine next time)~~
+
+~~2. chmod 600 ~/.ssh/vast_key~~
+
+~~3. ssh-keygen -y -f ~/.ssh/vast_key > ~/.ssh/vast_key.pub~~
+
+~~4. copy the public key and paste it into "add ssh key" in vast~~
+
+~~5. scp -i ~/.ssh/vast_key -P [PROXY PORT_NUMBER] -r root@ssh4.vast.ai:(PATH TO FILE IN VAST MACHINE) /Users/vincentcheng/Desktop/allcode/RL_stuff/maniskill (ONLY TRANSFER SINGULAR FILES)~~
+
 
 
 
