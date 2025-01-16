@@ -1,0 +1,17 @@
+{
+  "env_info": null,
+  "commit_info": null,
+  "episodes": [
+    {
+      "episode_id": 0,
+      "episode_seed": 2022,
+      "control_mode": "pd_joint_delta_pos",
+      "elapsed_steps": 500,
+      "reset_kwargs": {
+        "options": {}
+      },
+      "success": false,
+      "fail": true
+    }
+  ]
+}

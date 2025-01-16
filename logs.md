@@ -67,6 +67,15 @@ i just sent all the errors to claude and it fixed it.
 
 
 1/14:
+- went through [Intro to task building](https://maniskill.readthedocs.io/en/latest/user_guide/tutorials/custom_tasks/intro.html)
+- went through code from push_cube.py -> push_cube.ipynb
+
+1/15:
+- went through most of [loading actors and articulations](https://maniskill.readthedocs.io/en/latest/user_guide/tutorials/custom_tasks/loading_objects.html)
+- finished up push_cube. ran video functionality
+- having a crazy bug of trying to upload actors. 
+is there something not implemented? can't upload ycb or other actors
+- articulation works? only on the downloaded one (partnet-mobility:1030)
 
 
 
@@ -80,7 +89,7 @@ how to ssh into vast.ai machine:
 ~/.ssh/vast_key (private key) and ~/.ssh/vast_key.pub (public key)
 3. run "chmod 600 ~/.ssh/vast_key"
 4. paste the public key into the "add ssh key" section in vast
-5. run "ssh -i ~/.ssh/vast_key [the direct ssh connect command in vast]"
+5. run "ssh -i ~/.ssh/vast_key [the direct ssh connect command in vast (starts with -p ...)]"
 
 opening a new window when connecting in vscode:
 1. cmd + shift + p 
