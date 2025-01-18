@@ -109,8 +109,7 @@ opening a new window when connecting in vscode:
 
 transferring files from vast to local (i can also just clone repo, add stuff, and push to github):
 (do this from local machine)
-
-using PAT token and git is better
+nvm git is just better: use PAT token as password in username/password 
 
 ~~1. have a file which contains the PRIVATE KEY in ~/.ssh/vast_key
 (idk if i need to redo this when i connect to another machine next time)~~
