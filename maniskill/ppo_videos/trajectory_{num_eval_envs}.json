@@ -1,0 +1,14 @@
+{
+  "env_info": {
+    "env_id": "PushCube-v1",
+    "env_kwargs": {
+      "num_envs": 64,
+      "reconfiguration_freq": 1,
+      "obs_mode": "rgb",
+      "render_mode": "rgb_array"
+    },
+    "max_episode_steps": 50
+  },
+  "commit_info": null,
+  "episodes": []
+}

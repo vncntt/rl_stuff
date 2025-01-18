@@ -77,6 +77,14 @@ i just sent all the errors to claude and it fixed it.
 is there something not implemented? can't upload ycb or other actors
 - articulation works? only on the downloaded one (partnet-mobility:1030)
 
+1/16, 17: no work 
+
+
+1/18:
+- setup baseline eval environment -> rl_eval.ipynb
+- ran RL baseline code from ppo.py on PushCube-v1
+- 
+
 
 
 
